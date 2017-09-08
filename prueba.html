@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>EXPRESION REGULAR</title>
+<script >
+	function validar() { 
+  var m = document.getElementById("matricula").value;
+ var expreg = /^[A-Z]{4}\d{3}\(-\d{2}\)$/;
+  if(expreg.exec(m))
+	alert("El Palabra Es correcta"); 
+ 
+  else 
+    alert("El Patron NO es correcto"); 
+} 
+
+</script>
+</head>
+<body>
+<form id="miForm" action="" method="get">
+<p>
+PATRON : <input type="text" id="matricula" />
+<br />
+<input type="button" value="VALIDAR" onclick="validar()" />
+</p>
+</form>
+</body>
+</html>
+
